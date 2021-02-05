@@ -17,7 +17,7 @@ class PID {
    * Initialize PID.
    * @param (Kp_, Ki_, Kd_) The initial PID coefficients
    */
-  void Init(double Kp_, double Ki_, double Kd_);
+  void Init(double Kp_, double Ki_, double Kd_, bool twiddle_);
 
   /**
    * Update the PID error variables given cross track error.
@@ -31,7 +31,12 @@ class PID {
    */
   double TotalError();
 
+  
+
  private:
+
+   void AddParameter(int index, double amount);
+   
   /**
    * PID Errors
    */
@@ -46,6 +51,11 @@ class PID {
   double Ki;
   double Kd;
 
+  bool   twiddle;
+  double total_error;
+  int    n_eval_steps;
+  double best_error;
+  double dp[3];
 };
 
 #endif  // PID_H
