@@ -28,7 +28,7 @@ Here I will consider [the rubic points](https://review.udacity.com/#!/rubrics/19
     I: 0.00100188  
     D: 21.2176  
     
-    also wanted to drive the car at 40 instead of 30 in a similar fashion. Therefore, I wanted to PID control the throttle value with the target speed and the current speed difference as CTS. As a result, the throttle PID parameters are:
+    also wanted to drive the car at 40 instead of 30 in a similar fashion. Therefore, I wanted to PID control the throttle value with the target speed and the current speed difference as CTS. As a result, the throttle PID parameters are:  
     P: 1.11531  
     I: 0.0031178  
     D: 41.5175  

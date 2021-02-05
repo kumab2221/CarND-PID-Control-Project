@@ -66,14 +66,14 @@ Enter the command in the top directory of the project according to the following
 Here is the main protocol that main.cpp uses for uWebSocketIO in communicating with the simulator.  
 
 ### INPUT: values provided by the simulator to the c++ program
-// Data from the simulator
-["cte"]            : Lateral distance between vehicle and trajectory
-["speed"]          : Vehicle speed
-["steering_angle"] : Vehicle steering angle
+// Data from the simulator  
+["cte"]            : Lateral distance between vehicle and trajectory  
+["speed"]          : Vehicle speed  
+["steering_angle"] : Vehicle steering angle  
 
 ### OUTPUT: values provided by the c++ program to the simulator  
 // Calculated value for use by the simulator  
-["steering_angle"] : Input steering angle calculated based on cross-track error
+["steering_angle"] : Input steering angle calculated based on cross-track error  
 ["throttle"]       : Throttle value calculated to drive at a safe speed  
 
 ## Submission  
